@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+	//함수의 인수(가변길이 인수를 처리할 수 있다)
+	function show2(x) {
+		document.write('전달된 인수 : ' + x);
+	}
+
+	//----
+	function show2(x, y) {
+		for (var i = 0; i < arguments.length; i++) {
+			var arrv = arguments[i];
+
+			document.write('<h1>' + arrv + '</h1>');
+		}
+	}
+	show2(100, 200, 300); //호출 : 함수 식별은 이름만 같으면 ok
+</script>
+</head>
+
+
+
+<body>
+</body>
+</html>

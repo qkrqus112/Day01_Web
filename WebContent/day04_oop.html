@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+
+<script>
+	function Duck() {
+		this.x = 10;
+		this.display = function() {
+			document.write(this.x);
+		};
+	}
+
+	var mduck = new Duck();
+	var mduck2 = new Duck();
+
+	//실행메소드추가
+	mduck.prototype.moveLeft = function() {
+		this.x = this.x - 1;
+		this.display();
+	};
+
+	//실행
+	mduck2.x = null;
+	mduck2.moveLeft();
+	
+	var obj = new Object();
+	var arr = new Array();
+</script>
+</head>
+<body>
+
+</body>
+</html>

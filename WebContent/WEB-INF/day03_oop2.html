@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+	//-- ECMAScript5:생성자함수 패턴의 객체생성을 추천
+	function Duck() {
+		this.x = 100; //window
+		this.y = 200;
+		this.myshape = 'DUCK';
+		this.display = function() {
+			document.write('<h1>' + this.x + ', ' + this.y + '</h1>');
+		}
+	}
+	
+	var mduck2 = new Duck(); //this = mduck2
+	mduck2.display();
+	var mduck3 = new Duck();
+	mduck3.display();
+	
+	
+	Duck();//this=window
+	
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

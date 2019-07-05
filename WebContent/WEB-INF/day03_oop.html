@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+	//객체-내장형(DOM)
+	//사용자정의 객체 : 변수, 메소드 = 복합체
+	var mduck ={
+			x:100,
+			y:200,
+			myshape:'DUCK',
+			display:function(){
+				document.write('<h1>' + x + '</h1>');
+			},
+			moveLeft:function(){
+				this.x=this.x-1;
+				this.play();
+			},
+			moveRightLfunction(){
+				this.x=this.x+1;
+				this.play();
+			}
+	}
+	
+	mduck.display();
+	mduck.moveleft();
+	
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

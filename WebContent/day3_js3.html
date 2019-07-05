@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+	//선언적함수, arguments
+	function show(arg) {
+		document.write('arg : ' + arg);
+	}
+
+	//함수리터럴
+
+	show(function() {
+		return 100;
+	}); //호출, 실행부
+
+	function outFuc() {
+		var out = 'Outer Function';
+	
+		return (function innerFuc() {
+			var inner ='Inner';//local v.
+			document.write("<br>"+out+" : "+inner);
+		});
+	}
+	
+	var result = outFuc();
+	result(); // inner function 실행
+	outFuc()();
+	
+	
+	
+</script>
+</head>
+<body>
+</body>
+</html>

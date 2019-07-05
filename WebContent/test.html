@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<style type="text/css">
+body {
+	width: 768px;
+	padding: 0;
+	margin: 0 auto;
+	background: #000;
+	font-size: 9pt;
+	font-family: "돋움";
+	line-height: 12pt;
+}
+
+#wrap {
+	width: 768px;
+	margin: 0 auto;
+	background: url("images/bg.jpg");
+	/*width 값을 줘야 랩의 전체 중앙 정렬이 가능합니다*/
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+header #top_header {
+	height: 370px;
+}
+
+header #top_header nav ul li {
+	list-style: none;
+	display: inline;
+}
+
+header #top_header nav ul {
+	background: #979797;
+	width: 85%;
+	height: 30px;
+	margin: 0 auto;
+}
+
+section #contents {
+	float: left;
+	border-right: dotted 1px;
+	width: 55%;
+	margin-left: 8%;
+	margin-top: 30px;
+}
+
+aside #sidebar {
+	float: right;
+	width: 30%;
+	margin-right: 7%;
+	margin-top: 30px;
+}
+
+aside #sidebar li {
+	list-style: none;
+	height: 40px;
+	text-indent: -15px;
+}
+
+footer {
+	background: url("images/bottom.jpg") no-repeat;
+	width: 100%;
+	height: 100px;
+	clear: both;
+}
+
+footer nav ul {
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+footer nav ul li {
+	width: 400px;
+	height: 21px;
+	display: inline;
+	list-style: circle;
+}
+
+.img_face {
+	width: 400px;
+}
+
+a:link, a:hover, a:visited {
+	text-decoration: none;
+	color: #3f3f3f;
+}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<!--전체 중앙정렬을 위해서 DIV태그 씀-->
+		<header id="top_header">
+			<h1>
+				<img src="images/header_bg.jpg" alt="다락방.." title="다락방..">
+			</h1>
+			<!--상단이미지-->
+			<nav>
+				<!--네비게이션-->
+				<ul>
+					<li><img src="images/menu1.jpg" alt=""></li>
+					<li><img src="images/menu2.jpg" alt=""></li>
+					<li><img src="images/menu3.jpg" alt=""></li>
+					<li><img src="images/menu4.jpg" alt=""></li>
+					<li><img src="images/menu5.jpg" alt=""></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="contents">
+			<!--논리적으로 구역을 나누는 태그:스토리의 직접적인 내용입력. 그러나 직접적으로 글을 쓰진 않는다-->
+			<h2>좋은 마음이 고운 얼굴을 만든다</h2>
+			<p>
+				남을 증오하는 감정은 <br /> 얼굴의 주름살이 되고,<br /> 남을 원망하는 마음은 <br /> 고운 얼굴을
+				추악하게 변모시킨다.<br /> 감정은 늘<br /> 신체에 대해서 반사 운동을 일으킨다.
+			</p>
+			<p>
+				<img src="images/face.gif" alt="" class="img_face">
+			</p>
+			<p>
+				사랑의 감정은 신체 내에<br /> 조화된 따스한 빛을 흐르게한다.<br /> 그리고 맥박이 고르며 보통 때보다 <br />
+				기운차게 움직인다.<br /> 또 사랑의 감정은 위장의 활동을 도와<br /> 소화를 잘 시킨다.
+			</p>
+			<p>
+				그렇기 때문에 <br /> 사랑의 감정은 무엇보다도<br /> 우선 건강에 좋은 것이다.
+			</p>
+			<p>-데카르트-</p>
+		</section>
+
+		<aside id="sidebar">
+			<!--aside : 직접적 내용의 부서적 설명, 인용문, 사이드메뉴 기타 등-->
+			<h3>
+				<img src="images/subtitle1.jpg" alt="">
+			</h3>
+			<ul>
+				<li><a href="index.html">좋은 마음이 고운 얼굴을 만든다</a></li>
+				<li><a href="#">침묵하는 연습</a></li>
+				<li><a href="#">마음이 따뜻한 사람을 만나고 싶다</a></li>
+				<li><a href="#">있는 그대로가 좋다</a></li>
+				<li><a href="#">나는 배우고 있습니다</a></li>
+				<li><a href="#">내 마음의 밝은 미소</a></li>
+				<li><a href="#">거지 신부의 빛나는 기부</a></li>
+			</ul>
+		</aside>
+
+		<footer>
+			<nav>
+				<ul>
+					<li><img src="images/footer_01.jpg" alt=""></li>
+					<li><img src="images/footer_02.jpg" alt=""></li>
+					<li><img src="images/footer_03.jpg" alt=""></li>
+					<li><img src="images/footer_04.jpg" alt=""></li>
+					<li><img src="images/footer_05.jpg" alt=""></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>
+
+
